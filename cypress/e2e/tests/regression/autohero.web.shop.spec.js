@@ -34,7 +34,6 @@ describe('AutoHero Web - Nueva compra', () => {
         cy.wait(3000)
 
         searchPage.clickOnFilters("Marca y modelo")
-        cy.wait(2000)
 
         //When I  filter by high price
         searchPage.selectOnSortBy("Precio más alto")
