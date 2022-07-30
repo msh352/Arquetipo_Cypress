@@ -1,0 +1,11 @@
+.DS_Store
+.DS_Store?
+.idea
+node_modules
+cypress/videos/*
+cypress/screenshots
+mochawesome-report
+.vscode
+.sonarlint
+allure-results/*
+package-lock.json

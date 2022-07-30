@@ -1,0 +1,51 @@
+{
+  "cy:clientLogin": "cypress run --spec \"UITests/Tests/testscriptname.js\" --reporter mocha-allure-reporter",
+  "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
+  "test:allure": "npm run cy:clientLogin && npm run report:allure",
+  "name": "cypress-cucumber-example",
+  "version": "1.0.0",
+  "description": "Example of cypress with cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --spec \"**/*.spec.js\"",
+    "test:all": "cypress run --spec \"**/*.spec.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheBrainFamily/cypress-cucumber-example.git"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "testing"
+  ],
+  "author": "Lukasz Gandecki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheBrainFamily/cypress-cucumber-example/issues"
+  },
+  "homepage": "https://github.com/TheBrainFamily/cypress-cucumber-example#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "backstopjs": "^5.1.0",
+    "browserslist": "^4.16.1",
+    "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress-tags": "0.0.21",
+    "node-scp": "0.0.14",
+    "snyk": "^1.437.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.28.0",
+    "allure-commandline": "^2.18.1",
+    "cypress": "^10.2.0",
+    "cypress-browser-permissions": "^1.0.5",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-log-to-output": "^1.1.2",
+    "gmail-tester": "^1.3.2",
+    "mocha-allure-reporter": "^1.4.0",
+    "typescript": "^4.2.4"
+  }
+}
