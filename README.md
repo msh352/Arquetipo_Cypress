@@ -17,4 +17,13 @@ O si quieres que te saque un reporte en linea de comandos y tambien video se pue
 npx cypress run --env allure=true,allureResultsPath=cypress/allure_results
 ```
 
+# Execute test with GUI
 
+1. Select e2e test
+![img.png](img.png)
+
+2. Select browser, in this case Chrome
+![img_1.png](img_1.png)
+   
+3. Finally run test that we want to execute
+![img_2.png](img_2.png)
