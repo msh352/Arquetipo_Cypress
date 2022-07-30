@@ -5,11 +5,9 @@ export default class SearchPage extends BasePage {
     selectBrand = 'select[id="make"]'
     buttonFilter = 'select[id="sortBy"]'
 
-
     constructor() {
         super()
     }
-
 
     clickOnFilters(filter){
         cy.log("searchPage - Start clickOnFilters");

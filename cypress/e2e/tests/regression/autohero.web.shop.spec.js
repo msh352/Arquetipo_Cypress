@@ -45,7 +45,7 @@ describe('AutoHero Web - Nueva compra', () => {
         //When I click on "Compra ahora"
         infoCarPage.clickOnBuyNow()
 
-        //verify Buy
+        //verify element in purchase page
         buyPage.verifyTotalPrice()
 
     })
