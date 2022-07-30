@@ -4,17 +4,17 @@
 ```
 npm install cypress@10.2.0 --save-dev
 npm i -D @shelex/cypress-allure-plugin
-
+npm i -D cypress @bahmutov/cypress-esbuild-preprocessor esbuild
+npm install -D @badeball/cypress-cucumber-preprocesso
+npm install -D @esbuild-plugins/node-modules-polyfill
 ```
 
 # Run
 
 
 ```
-.\node_modules\.bin\cypress open --config-file cypress-pro.config.ts --env allure=true,allureResultsPath=cypress/allure_results
+.\node_modules\.bin\cypress open --config-file cypress-pro-cucumber.config.ts
 
-O si quieres que te saque un reporte en linea de comandos y tambien video se puede ejecutar asi:
-npx cypress run --env allure=true,allureResultsPath=cypress/allure_results
 ```
 
 
