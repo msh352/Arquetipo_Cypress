@@ -17,4 +17,13 @@ npm install -D @esbuild-plugins/node-modules-polyfill
 
 ```
 
+# Execute test with GUI
 
+1. Select e2e testing
+![img.png](img.png)
+
+2. Select browser, in this case Chrome
+![img_1.png](img_1.png)
+
+3. Finally run test that we want to execute
+![img_2.png](img_2.png)
