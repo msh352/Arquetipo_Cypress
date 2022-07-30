@@ -1,10 +1,12 @@
 import HomePage from '../../../pages/homePage.js'
 import SearchPage from '../../../pages/searchPage.js'
 import InfoCarPage from '../../../pages/infoCarPage.js'
+import BuyPage from '../../../pages/buyPage.js'
 
 const homePage = new HomePage();
 const searchPage = new SearchPage();
 const infoCarPage = new InfoCarPage();
+const buyPage = new BuyPage();
 
 
 describe('AutoHero Web - Nueva compra', () => {
@@ -19,7 +21,6 @@ describe('AutoHero Web - Nueva compra', () => {
 
         //When I click on Search car now
         homePage.clickOnSearchCarNow()
-        //cy.get('button[class="button___2R6qU size-sm___3TKQS default___1FRAY"]').click({force: true})
 
         //When I filter by Marca y modelo
         searchPage.clickOnFilters("Marca y modelo")
@@ -44,6 +45,9 @@ describe('AutoHero Web - Nueva compra', () => {
 
         //When I click on "Compra ahora"
         infoCarPage.clickOnBuyNow()
+
+        //verify Buy
+        buyPage.verifyTotalPrice()
 
     })
 
