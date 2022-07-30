@@ -19,7 +19,7 @@ npx cypress run --env allure=true,allureResultsPath=cypress/allure_results
 
 # Execute test with GUI
 
-1. Select e2e test
+1. Select e2e testing
 ![img.png](img.png)
 
 2. Select browser, in this case Chrome
